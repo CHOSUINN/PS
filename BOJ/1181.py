@@ -1,4 +1,7 @@
 # Silver
+# 문자열의 길이를 세서 그 길이를 담은 리스트 strlen. 답을 담고 있는 answer리스트. 
+# 입력값을 받아서 strlen리스트에서 길이를 비교 만약 str보다 길이가 긴 게 있으면 그 앞에자리 insert.
+# 만약 값이 같으면 같은 값 바로 뒤 자리에 insert
 
 import sys
 
@@ -11,8 +14,6 @@ for _ in range(n):
 answer = list(answer)
 answer.sort()
 answer.sort(key=len)
-
-
 for word in answer :
     print(word)
     

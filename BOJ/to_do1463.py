@@ -13,5 +13,3 @@ while (n % 3 == 0 or n % 2 == 0) and n > 1 :
         n -= 1
         count += 1
 print(count)
-        
-        

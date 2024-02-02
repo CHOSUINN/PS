@@ -13,10 +13,6 @@ def twoSum(self, nums: list[int], target: int) -> list[int]:
             return [idx, num_dict[find_num]]
         else :
             num_dict[val] = idx
-    ## 문제 풀때 어려웠던 부분은 중복처리를 어떻게 해결해야할까? 엿다.
-    ## 해결법은 애초에 딕셔너리에 넣기전에 딕셔너리 내의 값으로 계산이 되는지 확인하고 넣는것이었다.
-    ## 그렇게 함으로써 중복 숫자가 나오더라도 상관없게 되었다. 기존에 딕셔너리에 값을 다 추가하고 계산하는 것과는 다르게
-    ## target 값이 나오지 않으면 중복 숫자가 있던 말든 상관 없게 된다.
     
     # 이분탐색/이진 탐색(Binary Search)  #69ms
     nums = [[n, i] for i, n in enumerate(nums)]

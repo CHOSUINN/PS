@@ -2,6 +2,7 @@ def longestConsecutive(self, nums: list[int]) -> int:
     # 시간복잡도 O(n)
     num_dict = {}
     max_count = 1
+    count = 1
     if len(nums) == 0:
         return 0
     for i in nums :

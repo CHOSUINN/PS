@@ -1,8 +1,8 @@
-def dailyTemperatures(self, temperatures: List[int]) -> List[int]:
+def dailyTemperatures(self, temperatures: list[int]) -> list[int]:
     answer = [0] * len(temperatures)
     stack = []
     for curr_day, curr_temp in enumerate(temperatures) :
-        while stack and stack[-1][1] < curr_temp :
+        while stack and curr_temp > stack[-1][1] :
             prev_day, _ = stack.pop()
             answer[prev_day] = curr_day - prev_day
         stack.append((curr_day, curr_temp))
